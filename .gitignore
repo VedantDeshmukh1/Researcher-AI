@@ -1,6 +1,6 @@
 # Environment variables
 .env
-test.txt
+keys.txt
 
 # Python
 __pycache__/
