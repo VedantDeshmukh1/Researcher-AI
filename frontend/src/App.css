@@ -1,0 +1,26 @@
+.App {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .paper-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
