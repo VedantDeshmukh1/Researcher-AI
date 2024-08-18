@@ -3,6 +3,8 @@ from tavily import TavilyClient
 from bs4 import BeautifulSoup
 import requests
 from typing import List, Dict
+from dotenv import load_dotenv
+load_dotenv()
 
 def extract_text_from_urls(url_list):
     all_text = ""
@@ -18,7 +20,7 @@ def extract_text_from_urls(url_list):
     return all_text
 
 def search(query: str, max_results: int = 5) -> List[Dict]:
-    tavily_api_key = os.getenv('TAVILY_API_KEY')
+    tavily_api_key = os.environ.get('TAVILY_API_KEY')
     if not tavily_api_key:
         raise ValueError("TAVILY_API_KEY not found in environment variables")
     

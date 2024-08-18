@@ -4,7 +4,10 @@ from .schemas import SearchRequest, UserActivity
 from .services import arxiv_service, google_scholar_service
 from typing import List
 from pydantic import BaseModel
+from dotenv import load_dotenv
+load_dotenv()
 
+# ... (rest of your imports and app setup)
 
 app = FastAPI()
 
