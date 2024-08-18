@@ -2,7 +2,7 @@ from tavily import TavilyClient
 from typing import List, Dict
 
 def search(query: str, max_results: int = 5) -> List[Dict]:
-    tavily_client = TavilyClient(api_key="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")
+    tavily_client = TavilyClient(api_key="")
     result = tavily_client.search(query, max_results=max_results, search_depth="advanced")
     
     papers = []
